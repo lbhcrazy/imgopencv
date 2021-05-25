@@ -18,7 +18,7 @@ int main()
 	waitKey(500); //等待5000ms后窗口自动关闭
 	//初始化结果图
 	Mat dstImage = Mat::zeros(M.rows, M.cols, CV_8UC3);
-
+	imshow("dstimage",dstImage );
 	//M提取阈值小于250的部分
 	M = M < 250;
 	imshow("阈值", M);
